@@ -102,3 +102,6 @@ body {
 /* SECTION 2 */
 
 /* .btn-check */
+.pb-3 {
+  padding-bottom: 12px !important;
+}
