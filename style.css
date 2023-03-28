@@ -25,6 +25,16 @@ body {
   background-color: #d3d4d6;
 }
 
+.me-5 {
+  margin-right: 6rem !important;
+}
+
+/* FOR BUTTONS - GENERIC */
+.px-1 {
+  padding-right: 65px !important;
+  padding-left: 65px !important;
+}
+
 .px-2 {
   padding-right: 42px !important;
   padding-left: 42px !important;
@@ -64,7 +74,7 @@ body {
 
 /* BORDER BOTTOM CUSTOMIZE - SECTION (MAIN HERO) */
 .border-secondary {
-  border-bottom: 1px solid #65676ba4 !important;
+  border-bottom: 1px solid #65676b67 !important;
 }
 
 .card {
@@ -104,4 +114,169 @@ body {
 /* .btn-check */
 .pb-3 {
   padding-bottom: 12px !important;
+}
+
+.fs-5 {
+  font-size: 17px !important;
+  font-weight: 600;
+}
+
+.fs-4 {
+  font-size: 12px !important;
+  font-weight: lighter !important;
+}
+
+.bi:hover {
+  cursor: pointer;
+}
+
+/* PAG E HOVER ANG COMPONENT SHOWS DETAIL */
+/* REFERENCE - STACKOVERFLOW */
+a[title]:hover {
+  content: attr(title);
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #3a3a3a;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: -2em;
+  right: 20%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  border-radius: 5px;
+}
+[data-title] {
+  position: relative;
+}
+
+/* GENERIC - COMMENT (like, reply)*/
+
+.fs-6 {
+  font-size: 12px !important;
+}
+
+.fs-6 p:first-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fs-6 p:nth-child(2):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* GENERIC - POST DESCRIPTION TEXT */
+
+.fs-3 {
+  font-size: 1rem !important;
+}
+
+/* ASIDE [LEFT SIDEBAR] ==============GENERIC BUTTONS=============== */
+
+.px-5 {
+  padding-right: 6rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(2) {
+  padding-right: 10rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(3) {
+  padding-right: 10.5rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(4) {
+  padding-right: 10rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(5) {
+  padding-right: 10.2rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(6) {
+  padding-right: 7.9rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .px-5:nth-child(7) {
+  padding-right: 10.2rem !important;
+  padding-left: 1rem !important;
+}
+
+aside .py-1:nth-child(7) {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Ads Center */
+ul li .px-5:first-child {
+  padding-right: 8.5rem !important;
+  padding-left: 1rem !important;
+}
+
+/* Ads Manager */
+ul li .px-5:nth-child(2) {
+  padding-right: 7.7rem !important;
+  padding-left: 1rem !important;
+}
+
+/* BLOOD DONATION */
+
+ul li .px-5:nth-child(3) {
+  padding-right: 6.7rem !important;
+  padding-left: 1rem !important;
+}
+
+/* CLIMATE SCIENCE CENTER */
+
+ul li .px-5:nth-child(4) {
+  padding-right: 3.8rem !important;
+  padding-left: 1rem !important;
+}
+/* CRISIS RESPONSE */
+
+ul li .px-5:nth-child(5) {
+  padding-right: 6.8rem !important;
+  padding-left: 1rem !important;
+}
+
+/* EVENTS */
+
+ul li .px-5:nth-child(6) {
+  padding-right: 10.3rem !important;
+  padding-left: 1rem !important;
+}
+
+/* FAVORITES */
+
+ul li .px-5:nth-child(7) {
+  padding-right: 9.3rem !important;
+  padding-left: 1rem !important;
+}
+
+/* FUNDRAISERS */
+
+ul li .px-5:nth-child(8) {
+  padding-right: 8.4rem !important;
+  padding-left: 1rem !important;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 35.5%;
 }
