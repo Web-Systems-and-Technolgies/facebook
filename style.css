@@ -55,17 +55,13 @@ body {
 }
 
 .py-2 {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 .container {
-  width: 680px;
+  width: 670px;
   margin: 0 auto;
-}
-
-.ms-5 {
-  margin-left: 670px !important;
 }
 
 .bg-dark {
@@ -75,6 +71,10 @@ body {
 /* BORDER BOTTOM CUSTOMIZE - SECTION (MAIN HERO) */
 .border-secondary {
   border-bottom: 1px solid #65676b67 !important;
+}
+
+.card {
+  display: flex !important;
 }
 
 .card {
@@ -177,7 +177,7 @@ a[title]:hover {
 
 /* GENERIC - POST DESCRIPTION TEXT */
 
-.fs-3 {
+.fs-2 {
   font-size: 1rem !important;
 }
 
@@ -187,96 +187,41 @@ a[title]:hover {
   padding-right: 6rem !important;
   padding-left: 1rem !important;
 }
-
-aside .px-5:nth-child(2) {
-  padding-right: 10rem !important;
-  padding-left: 1rem !important;
-}
-
-aside .px-5:nth-child(3) {
-  padding-right: 10.5rem !important;
-  padding-left: 1rem !important;
-}
-
-aside .px-5:nth-child(4) {
-  padding-right: 10rem !important;
-  padding-left: 1rem !important;
-}
-
-aside .px-5:nth-child(5) {
-  padding-right: 10.2rem !important;
-  padding-left: 1rem !important;
-}
-
-aside .px-5:nth-child(6) {
-  padding-right: 7.9rem !important;
-  padding-left: 1rem !important;
-}
-
-aside .px-5:nth-child(7) {
-  padding-right: 10.2rem !important;
-  padding-left: 1rem !important;
-}
+/* SEE MORE BUTTON */
 
 aside .py-1:nth-child(7) {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-/* Ads Center */
-ul li .px-5:first-child {
-  padding-right: 8.5rem !important;
-  padding-left: 1rem !important;
-}
-
-/* Ads Manager */
-ul li .px-5:nth-child(2) {
-  padding-right: 7.7rem !important;
-  padding-left: 1rem !important;
-}
-
-/* BLOOD DONATION */
-
-ul li .px-5:nth-child(3) {
-  padding-right: 6.7rem !important;
-  padding-left: 1rem !important;
-}
-
-/* CLIMATE SCIENCE CENTER */
-
-ul li .px-5:nth-child(4) {
-  padding-right: 3.8rem !important;
-  padding-left: 1rem !important;
-}
-/* CRISIS RESPONSE */
-
-ul li .px-5:nth-child(5) {
-  padding-right: 6.8rem !important;
-  padding-left: 1rem !important;
-}
-
-/* EVENTS */
-
-ul li .px-5:nth-child(6) {
-  padding-right: 10.3rem !important;
-  padding-left: 1rem !important;
-}
-
-/* FAVORITES */
-
-ul li .px-5:nth-child(7) {
-  padding-right: 9.3rem !important;
-  padding-left: 1rem !important;
-}
-
-/* FUNDRAISERS */
-
-ul li .px-5:nth-child(8) {
-  padding-right: 8.4rem !important;
-  padding-left: 1rem !important;
-}
-
 .col-lg-4 {
   flex: 0 0 auto;
   width: 35.5%;
+}
+
+/* FONT SIZE OF P ELEMENT ON EVERY BUTTON IN LEFT SIDEBAR */
+
+.fs-3 {
+  font-size: 17px !important;
+}
+
+/* GENERIC FOOTER FONT SIZE */
+.fs-1 {
+  font-size: 15px !important;
+}
+
+/* GENERIC MARGIN LEFT (Facebook icon, nested commentator, footer) */
+
+.ms-4 {
+  margin-left: 2.3rem !important;
+}
+
+/* Your shortcut */
+
+.display-6 {
+  font-size: 20px !important;
+}
+
+.w-25 {
+  width: 57% !important;
 }
