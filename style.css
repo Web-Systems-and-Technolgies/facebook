@@ -1,3 +1,7 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
 body {
   background-color: #f0f2f5;
 }
@@ -35,7 +39,7 @@ body {
   padding-left: 16px !important;
 }
 
-.bg-success {
+.bg-info {
   background-color: #ffffff !important;
 }
 
@@ -221,7 +225,7 @@ aside .py-1:nth-child(7) {
 
 /* GENERIC FOOTER FONT SIZE */
 .fs-1 {
-  font-size: 15px !important;
+  font-size: 12px !important;
 }
 
 /* GENERIC MARGIN LEFT (Facebook icon, nested commentator, footer) */
@@ -240,9 +244,27 @@ aside .py-1:nth-child(7) {
   width: 57% !important;
 }
 
-/* RIGHT SIDE BAR SCROLLABLE */
+/* RIGHT, LEFT SIDE BAR AND MAIN SCROLLABLE */
 .callout-scroll {
   max-height: 900px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+/* GENERIC ACTIVE STATUS  */
+
+.start-100 {
+  left: 87% !important;
+}
+
+.top-100 {
+  top: 82% !important;
+}
+
+.p-5 {
+  padding: 4.5px !important;
 }
