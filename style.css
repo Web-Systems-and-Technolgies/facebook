@@ -26,11 +26,11 @@ body {
 }
 
 .me-5 {
-  margin-right: 6rem !important;
+  margin-right: 4.5rem !important;
 }
 
 /* FOR BUTTONS - GENERIC */
-.px-1 {
+.px-lg-1 {
   padding-right: 65px !important;
   padding-left: 65px !important;
 }
@@ -39,9 +39,10 @@ body {
   padding-right: 42px !important;
   padding-left: 42px !important;
 }
+
 .px-3 {
-  padding-right: 5px !important;
-  padding-left: 5px !important;
+  padding-right: 43px !important;
+  padding-left: 43px !important;
 }
 
 .px-4 {
@@ -216,12 +217,19 @@ aside .py-1:nth-child(7) {
   margin-left: 2.3rem !important;
 }
 
-/* Your shortcut */
+/* Your shortcut and Sponsored (font size) */
 
 .display-6 {
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 .w-25 {
   width: 57% !important;
+}
+
+/* RIGHT SIDE BAR SCROLLABLE */
+.callout-scroll {
+  max-height: 900px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
