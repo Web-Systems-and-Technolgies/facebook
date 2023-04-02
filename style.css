@@ -26,13 +26,13 @@ body {
 }
 
 .me-5 {
-  margin-right: 4.5rem !important;
+  margin-right: 4.6rem !important;
 }
 
 /* FOR BUTTONS - GENERIC */
-.px-lg-1 {
-  padding-right: 65px !important;
-  padding-left: 65px !important;
+.px-xl-3 {
+  padding-right: 62px !important;
+  padding-left: 62px !important;
 }
 
 .px-2 {
@@ -53,6 +53,11 @@ body {
 .py-1 {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
+}
+
+.px-sm-2 {
+  padding-right: 18px !important;
+  padding-left: 18px !important;
 }
 
 .py-2 {
