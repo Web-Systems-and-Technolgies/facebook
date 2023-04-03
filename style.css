@@ -134,11 +134,6 @@ body {
   padding-bottom: 12px !important;
 }
 
-.fs-5 {
-  font-size: 17px !important;
-  font-weight: 600;
-}
-
 .fs-4 {
   font-size: 12px !important;
   font-weight: lighter !important;
@@ -285,4 +280,14 @@ aside .py-1:nth-child(7) {
 
 .text-info {
   color: #0d6dfdc4 !important;
+}
+
+.display-3 {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+/* NESTED POST DESCRIPTION - font size generic */
+
+.fs-5 {
+  font-size: 14px !important;
 }
