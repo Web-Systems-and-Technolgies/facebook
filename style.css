@@ -268,3 +268,21 @@ aside .py-1:nth-child(7) {
 .p-5 {
   padding: 4.5px !important;
 }
+
+/* DROPDOWN MESSENGER */
+
+.callout-width {
+  width: 25em;
+}
+
+.bg-warning {
+  background-color: #e7f3ff !important;
+}
+
+.display-2 {
+  font-size: 24px !important;
+}
+
+.text-info {
+  color: #0d6dfdc4 !important;
+}
