@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- BOOTSTRAP LIBRARY -->
     <link
       rel="stylesheet"
@@ -3194,6 +3196,17 @@
       const popoverList = [...popoverTriggerList].map(
         (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
       );
+    </script>
+    <!-- DISABLE RIGHT CLICK -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").bind("cut copy paste", function (e) {
+          e.preventDefault();
+        });
+        $("body").on("contextmenu", function (e) {
+          return false;
+        });
+      });
     </script>
   </body>
 </html>

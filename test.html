@@ -15,7 +15,7 @@
   </head>
   <body class="bg-black">
     <main class="position-relative">
-      <nav class="navbar fixed-bottom bg-body-tertiary d-block d-sm-none">
+      <!-- <nav class="navbar fixed-bottom bg-body-tertiary d-block d-sm-none">
         <div class="container-fluid d-flex justify-content-between">
           <button type="button" class="btn">
             <svg
@@ -435,7 +435,7 @@
             veritatis. Sapiente, optio veritatis!
           </p>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <script
@@ -456,6 +456,17 @@
       const popoverList = [...popoverTriggerList].map(
         (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
       );
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").bind("cut copy paste", function (e) {
+          e.preventDefault();
+        });
+        $("body").on("contextmenu", function (e) {
+          return false;
+        });
+      });
     </script>
   </body>
 </html>
