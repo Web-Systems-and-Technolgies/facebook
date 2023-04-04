@@ -22,7 +22,8 @@
     <!-- FACEBOOK HEAD ICON -->
     <link rel="icon" href="assets/imgs/head icon/facebook icon.png" />
   </head>
-  <body class="overflow-hidden position-relative">
+  <!-- add overflow-hidden to body -->
+  <body class="position-relative">
     <header>
       <!-- MAIN NAVIGATION -->
       <nav class="nav navbar pb-0">
@@ -99,7 +100,7 @@
             <div
               class="border-3 border-bottom border-primary border-top-0 border-end-0 border-start-0 pb-1"
             >
-              <a href="#" class="btn px-2 border-0" data-title="Hi crush">
+              <a href="#" class="btn px-2 border-0" data-title="Home">
                 <svg viewBox="0 0 28 28" fill="#1b74e4" height="28" width="28">
                   <path
                     d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"
@@ -339,7 +340,7 @@
                             />
                             <ul class="list-unstyled ms-2">
                               <li>
-                                <p class="mb-0 text-dark">
+                                <p class="mb-0 text-dark text-start">
                                   Marlon Mario Tumamak
                                 </p>
                               </li>
@@ -367,7 +368,9 @@
                             />
                             <ul class="list-unstyled ms-2">
                               <li>
-                                <p class="mb-0 text-dark">BudoKapeOgPan ☕🥖</p>
+                                <p class="mb-0 text-dark text-start">
+                                  BudoKapeOgPan ☕🥖
+                                </p>
                               </li>
                               <li class="d-flex gap-1">
                                 <p class="mb-0 fs-1 text-info fw-bold">
@@ -863,6 +866,7 @@
               </div>
             </div>
           </div>
+          <!-- NOTIFICATION BUTTON -->
           <a
             href="#"
             class="btn border-0 rounded-circle btn-secondary pb-2 position-relative"
@@ -1244,15 +1248,41 @@
         </div>
         <!-- LEFT SIDE FOOTER -->
         <footer class="ms-3">
-          <p class="w-50 text-secondary fs-1 fw-semibold">
-            Privacy &sdot; Terms &sdot; Advertising &sdot; Ad Choices &sdot;
-            Cookies &sdot; More &sdot; Meta &copy 2023
-          </p>
+          <div class="w-50 text-secondary fs-1 fw-semibold">
+            <span
+              >Privacy &sdot; Terms &sdot; Advertising &sdot; Ad Choices &sdot;
+              Cookies</span
+            >
+
+            <div class="dropup-center dropup d-flex">
+              <a
+                class="text-decoration-none fs-1 fw-semibold text-secondary pe-1"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+
+              <span class="text-secondary fs-1 fw-semibold mb-0"
+                >&sdot; Meta &copy 2023</span
+              >
+              <ul class="dropdown-menu p-2 rounded-3" style="width: 300px">
+                <li><a class="dropdown-item rounded-4" href="#">About</a></li>
+                <li><a class="dropdown-item rounded-4" href="#">Careers</a></li>
+                <li>
+                  <a class="dropdown-item rounded-4" href="#">Developers</a>
+                </li>
+                <li><a class="dropdown-item rounded-4" href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+
           <!-- MORE (COLLAPSING) -->
         </footer>
       </aside>
 
-      <section class="callout-scroll container">
+      <section class="callout-scroll container ps-0 pe-0">
         <!-- MAIN HERO (STORIES, REELS, ROOMS) -->
 
         <div
@@ -1484,7 +1514,7 @@
             </button>
           </div>
         </section>
-        <!-- SECTION 3 -->
+        <!-- SECTION 3 (FIRST POST) -->
         <section class="navbar mt-3 rounded">
           <ul class="container list-unstyled">
             <li class="">
@@ -1809,7 +1839,8 @@
             View more comments
           </p>
         </section>
-        <section class="navbar mt-3 rounded mb-4">
+        <!-- 2ND POST -->
+        <section class="navbar mt-3 rounded">
           <ul class="container list-unstyled">
             <li class="">
               <ul
@@ -1825,17 +1856,6 @@
                 <li>
                   <p class="display-3 ps-2 mb-0">
                     University of Science and Technology of Southern Philippines
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      fill="#1B74E4"
-                      class="bi bi-check-circle-fill pb-1"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                      />
-                    </svg>
                   </p>
                   <ul
                     class="list-unstyled d-flex align-items-center gap-2 ps-2"
@@ -1862,7 +1882,7 @@
           </ul>
           <!-- IMAGE POST -->
           <div class="container justify-content-center ps-0 pe-0 pb-3">
-            <div class="w-100 m-2">
+            <div class="w-100 m-2 mb-0 border-bottom-0">
               <img
                 src="assets/imgs/post-imgs/photo 3.jpg"
                 alt="picture"
@@ -1872,7 +1892,7 @@
             </div>
             <!-- POST CONTAINER -->
             <div
-              class="ps-1 pe-1 pt-1 ms-2 me-2 rounded-bottom-4 border-top border-bottom border-start border-end"
+              class="ps-1 pe-1 pt-1 ms-2 me-2 rounded-bottom-4 border-top-0 border-bottom border-start border-end"
             >
               <ul class="list-unstyled d-flex align-items-center gap-2 ps-2">
                 <li>
@@ -1925,6 +1945,7 @@
                 Basahin:
                 <a
                   href="https://www.officialgazette.gov.ph/2023/03/31/memorandum-circular-no-16-s-2023/?fbclid=IwAR2oNNIUM_TI4t4IyUk2Z07l-MrNYSbOjfEHWXLEzGdIZVl0b1ZT9jutm3o"
+                  target="_blank"
                   >https://www.officialgazette.gov.ph/2023/03/31/memorandum....</a
                 >
               </p>
@@ -2101,6 +2122,245 @@
             </form>
           </div>
         </section>
+        <!-- THIRD POST -->
+        <section class="navbar mt-3 rounded mb-4">
+          <ul class="container list-unstyled">
+            <!-- HEADER POST (IMGS, NAME, TIME POST, PUBLIC)-->
+            <li class="d-flex align-items-center gap-2 ps-2 pt-2">
+              <img
+                src="assets/imgs/profile picture/p8.jpg"
+                alt="makotek computers profile picture"
+                class="rounded-circle border border-2 border-primary"
+              />
+              <div>
+                <p class="mb-0 display-3">Makotek CDO</p>
+                <div class="d-flex gap-2 align-items-center">
+                  <p class="mb-0 fs-4">6h</p>
+                  <!-- PUBLIC POST ICON -->
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="16"
+                    fill="#65676B"
+                    class="bi bi-globe-central-south-asia"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="p-2">
+                <p class="fs-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis modi ad amet nulla quas qui? Quibusdam, sunt
+                  facilis consequatur corrupti odio esse obcaecati suscipit eos
+                  cum eligendi enim saepe possimus? Vitae doloribus aspernatur
+                  natus fugit esse mollitia dolor. Voluptatum earum, maiores
+                  repellendus tempore laborum asperiores veniam necessitatibus
+                  ut, officiis autem eaque omnis aliquam tempora, in iusto
+                  facilis. Praesentium, maxime assumenda.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="assets/imgs/post-imgs/photo 5.png"
+                alt="computer sale images "
+                width="100%"
+                class="img-fluid rounded-top-4"
+              />
+            </li>
+            <li class="d-flex">
+              <img
+                src="assets/imgs/post-imgs/photo 6.png"
+                alt="computer sale images "
+                width="100%"
+                class="img-fluid border-end border-top border-2"
+              />
+              <img
+                src="assets/imgs/post-imgs/photo 7.jpg"
+                alt="computer sale images "
+                width="100%"
+                class="img-fluid border-top"
+              />
+            </li>
+          </ul>
+          <div
+            class="d-flex container-fluid ps-0 pe-0 ms-3 me-3 border-bottom pb-3 mt-2"
+          >
+            <ul class="d-flex list-unstyled mb-0">
+              <li>
+                <!-- LIKE -->
+                <img
+                  src="assets/imgs/reaction-emoji-imgs/like.svg"
+                  alt="like"
+                  width="18"
+                  class="align-items-center"
+                />
+              </li>
+              <!-- HEART -->
+              <li>
+                <img
+                  src="assets/imgs/reaction-emoji-imgs/heart.svg  "
+                  alt="heart"
+                  width="18"
+                  class="align-items-center"
+                />
+              </li>
+              <!--REACTIONS COUNT-->
+              <li>
+                <p class="mb-0 ms-1 text-secondary align-items-center">20.3K</p>
+              </li>
+            </ul>
+            <div class="d-flex gap-2 align-items-center">
+              <p class="mb-0 text-secondary">1K comments</p>
+              <p class="mb-0 text-secondary">950 shares</p>
+            </div>
+          </div>
+          <!-- REACTION BUTTONS -->
+          <div class="d-flex container-fluid ps-0 pe-0 ms-3 me-3 mb-1 mt-1">
+            <button
+              class="btn d-flex align-items-center px-sm-0 px-sm-5 border-0"
+            >
+              <i
+                data-visualcompletion="css-img"
+                class="me-2"
+                style="
+                  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                  background-position: 0px -322px;
+                  background-size: auto;
+                  width: 18px;
+                  height: 18px;
+                  background-repeat: no-repeat;
+                  display: inline-block;
+                "
+              ></i>
+              <p class="mb-0">Like</p>
+            </button>
+            <button
+              class="btn d-flex align-items-center px-sm-0 px-sm-5 border-0"
+            >
+              <i
+                data-visualcompletion="css-img"
+                class="me-2"
+                style="
+                  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                  background-position: 0px -284px;
+                  background-size: auto;
+                  width: 18px;
+                  height: 18px;
+                  background-repeat: no-repeat;
+                  display: inline-block;
+                "
+              ></i>
+              <p class="mb-0">Comment</p>
+            </button>
+
+            <button class="btn d-flex align-items-center px-sm-5 border-0">
+              <i
+                data-visualcompletion="css-img"
+                class="me-2"
+                style="
+                  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                  background-position: 0px -341px;
+                  background-size: auto;
+                  width: 18px;
+                  height: 18px;
+                  background-repeat: no-repeat;
+                  display: inline-block;
+                "
+              ></i>
+              <p class="mb-0">Share</p>
+            </button>
+          </div>
+          <!-- COMMENT (IMG, INPUT) -->
+          <div class="container-fluid ps-0 pe-0 ms-3 me-3 mb-2">
+            <form class="container-fluid pe-0 ps-0 pt-2 border-1 border-top">
+              <div class="input-group">
+                <img
+                  src="assets/imgs/profile picture/profile.jpg"
+                  class="rounded-circle"
+                />
+                <input
+                  class="form-control ms-2 rounded-start-pill rounded-end-pill bg-light position-relative"
+                  type="search"
+                  placeholder="Write your commentlorem "
+                  aria-label="Search"
+                />
+                <div
+                  class="position-absolute top-50 end-0 translate-middle-y d-flex gap-2"
+                >
+                  <i
+                    data-visualcompletion="css-img"
+                    style="
+                      background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                      background-position: 0px -396px;
+                      background-size: auto;
+                      width: 16px;
+                      height: 16px;
+                      background-repeat: no-repeat;
+                      display: inline-block;
+                    "
+                  ></i>
+                  <i
+                    data-visualcompletion="css-img"
+                    style="
+                      background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                      background-position: 0px -515px;
+                      background-size: auto;
+                      width: 16px;
+                      height: 16px;
+                      background-repeat: no-repeat;
+                      display: inline-block;
+                    "
+                  ></i>
+                  <i
+                    data-visualcompletion="css-img"
+                    style="
+                      background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                      background-position: 0px -430px;
+                      background-size: auto;
+                      width: 16px;
+                      height: 16px;
+                      background-repeat: no-repeat;
+                      display: inline-block;
+                    "
+                  ></i>
+                  <i
+                    data-visualcompletion="css-img"
+                    style="
+                      background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                      background-position: 0px -566px;
+                      background-size: auto;
+                      width: 16px;
+                      height: 16px;
+                      background-repeat: no-repeat;
+                      display: inline-block;
+                    "
+                  ></i>
+                  <i
+                    data-visualcompletion="css-img"
+                    class="me-3"
+                    style="
+                      background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/I6wNWs7nQUG.png?_nc_eui2=AeHkOoY2JFEHZoNIx9xdMpy9xCWv9Ot-JavEJa_0634lqzpUAobcK760WZ-ry0YdP1ql2c7IrtoxC9Um-83YNGJe');
+                      background-position: 0px -685px;
+                      background-size: auto;
+                      width: 16px;
+                      height: 16px;
+                      background-repeat: no-repeat;
+                      display: inline-block;
+                    "
+                  ></i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </section>
       <!-- RIGHT SIDEBAR -->
       <aside
@@ -2197,7 +2457,8 @@
             >
               <p class="mb-0">Contacts</p>
               <div class="d-flex justify-content-end align-items-center">
-                <button class="btn border-0">
+                <!-- MAKE VIDEO CALL  -->
+                <button class="btn border-0" data-title="New call">
                   <svg
                     fill="#444"
                     viewBox="0 0 16 16"
@@ -2212,7 +2473,11 @@
                     </g>
                   </svg>
                 </button>
-                <button class="btn border-0">
+                <!-- SEARCH NAME OR GROUP -->
+                <button
+                  class="btn border-0"
+                  data-title="Search by name or group"
+                >
                   <svg
                     fill="#444"
                     viewBox="0 0 16 16"
@@ -2242,7 +2507,12 @@
                     </g>
                   </svg>
                 </button>
-                <button class="btn border-0">
+                <button
+                  class="btn border-0"
+                  data-title="Options"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <svg
                     fill="#444"
                     viewBox="0 0 20 20"
@@ -2259,49 +2529,77 @@
                 </button>
               </div>
             </li>
+
             <li>
               <ol class="list-unstyled pb-3 mb-2 border-bottom">
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p1.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p1.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- AWAY STATUS -->
+                      <span
+                        class="rounded-4 bg-light position-absolute top-100 start-100 translate-middle border-white fs-1 text-success px-1 fw-bold"
+                        >11m</span
+                      >
+                    </div>
+
                     <p class="mb-0 ps-2 text-dark">Honeybelle Ompoc</p>
                   </button>
                 </li>
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p2.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p2.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
                     <p class="mb-0 ps-2 text-dark">John Paul B Capin</p>
                   </button>
                 </li>
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p3.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p3.jpg"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-primary"
+                        width="35"
+                      />
+                      <!-- AWAY STATUS -->
+                      <span
+                        class="rounded-4 bg-light position-absolute top-100 start-100 translate-middle border-white fs-1 text-success px-1 fw-bold"
+                        >1h</span
+                      >
+                    </div>
                     <p class="mb-0 ps-2 text-dark">Jayzon Rica</p>
                   </button>
                 </li>
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p4.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p4.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
                     <p class="mb-0 ps-2 text-dark">Kenneth Pormento</p>
                   </button>
                 </li>
@@ -2332,6 +2630,7 @@
                         class="rounded-circle"
                         width="35"
                       />
+                      <!-- ACTIVE STATUS -->
                       <span
                         class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
                       ></span>
@@ -2342,24 +2641,483 @@
                 </li>
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p7.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p7.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- AWAY STATUS -->
+                      <span
+                        class="rounded-4 bg-light position-absolute top-100 start-100 translate-middle border-white fs-1 text-success px-1 fw-bold"
+                        >2m</span
+                      >
+                    </div>
                     <p class="mb-0 ps-2 text-dark">James David Mercado</p>
                   </button>
                 </li>
                 <li class="w-100">
                   <button class="btn d-flex align-items-center w-100 border-0">
-                    <img
-                      src="assets/imgs/contacts-img/p8.jpg"
-                      alt="person1"
-                      class="rounded-circle"
-                      width="35"
-                    />
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p8.jpg"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-primary"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
                     <p class="mb-0 ps-2 text-dark">Jayce Lago Tabobo</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p10.jpg"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-light"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Retchel John Langeras</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p9.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Kyle Langomes</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p11.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Robert Erejer</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p12.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Jerald Timbang</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p13.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Neil Angelo Pangan</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p14.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Jay Emerald Chaves</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p15.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Sharmillah Cagas</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p16.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Jonie-Boy Sumalpong</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p17.jpg"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-primary"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Elle Escala</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p18.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">
+                      Neil Coleen Jabiniao Acero
+                    </p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p19.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Metchlyr Balasabas</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p20.jpg"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-primary"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">
+                      Alyssa Carmel Gadrinab Bonachita
+                    </p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p21.png"
+                        alt="person1"
+                        class="rounded-circle border border-2 border-primary"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Christine Mae Cabanada</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p21.png"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Gmarc Collados</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p22.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Jayvee Rañoa Contiñedo</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p23.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Donna Sevilla Cruz</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p24.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Vincent Estenzo</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p21.png"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Sophia Yvonne</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p25.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Nathaniel Mari Gucor</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p21.png"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Sean Kirk</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p26.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Jerome Lagria</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p27.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Alsonfred Leyva</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p28.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Joveren Quimzon Namata</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p29.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Benjie Negrete</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p30.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">James Heinrich Rocales</p>
+                  </button>
+                </li>
+                <li class="w-100">
+                  <button class="btn d-flex align-items-center w-100 border-0">
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/contacts-img/p31.jpg"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Mario Marlon Tumamak</p>
                   </button>
                 </li>
               </ol>
@@ -2367,7 +3125,7 @@
             <!-- GROUP CONVERSATION -->
             <li class="mb-0">Group conversations</li>
             <li>
-              <ol class="list-unstyled">
+              <ol class="list-unstyled mb-4">
                 <li class="w-100 mt-2">
                   <button class="btn d-flex align-items-center w-100 border-0">
                     <img
@@ -2427,5 +3185,15 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+
+    <!-- ENABLE POPOVERS -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
   </body>
 </html>
