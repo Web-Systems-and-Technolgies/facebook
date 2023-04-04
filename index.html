@@ -203,10 +203,10 @@
           <!-- MENU -->
           <button
             type="button"
-            class="btn border-0 rounded-circle btn-secondary pb-2 d-sm-none d-md-none d-none d-lg-flex"
+            class="btn border-0 rounded-circle btn-secondary d-sm-none d-md-none d-none d-lg-flex"
             data-title="Menu"
           >
-            <svg fill="#050505" viewBox="0 0 44 44" width="16">
+            <svg fill="#050505" viewBox="0 -10 48 53" width="18">
               <circle cx="7" cy="7" r="6"></circle>
               <circle cx="22" cy="7" r="6"></circle>
               <circle cx="37" cy="7" r="6"></circle>
@@ -1286,7 +1286,11 @@
 
       <section class="callout-scroll container ps-0 pe-0">
         <!-- MAIN HERO (STORIES, REELS, ROOMS) -->
-
+        <div class="navbar rounded mt-2">
+          <div class="bg-danger text-center w-100 text-light fw-semibold">
+            ⚠️⛔Note: Facebook clone ⛔⚠️
+          </div>
+        </div>
         <div
           class="container-fluid text-center mt-3 bg-info pt-1 pb-1 border-bottom rounded-top-2"
         >
@@ -3122,6 +3126,27 @@
                     <p class="mb-0 ps-2 text-dark">Mario Marlon Tumamak</p>
                   </button>
                 </li>
+                <li class="w-100">
+                  <button
+                    class="btn d-flex align-items-center w-100 border-0"
+                    type="button"
+                    id="toast-button"
+                  >
+                    <div class="position-relative">
+                      <img
+                        src="assets/imgs/profile picture/p1.png"
+                        alt="person1"
+                        class="rounded-circle"
+                        width="35"
+                      />
+                      <!-- ACTIVE STATUS -->
+                      <span
+                        class="rounded-circle bg-success p-5 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                      ></span>
+                    </div>
+                    <p class="mb-0 ps-2 text-dark">Alaiza Olores</p>
+                  </button>
+                </li>
               </ol>
             </li>
             <!-- GROUP CONVERSATION -->
@@ -3176,6 +3201,118 @@
         </div>
       </aside>
     </main>
+    <!-- CHATS  -->
+    <section>
+      <!-- Toast -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast">
+          <div class="toast-header">
+            <ul
+              class="list-unstyled d-flex align-items-center justify-content-between mt-2"
+            >
+              <li>
+                <div class="position-relative">
+                  <img
+                    src="assets/imgs/profile picture/p1.png"
+                    alt="crush"
+                    class="rounded-circle border border-2 border-primary me-1"
+                  />
+
+                  <!-- ACTIVE STATUS -->
+                  <span
+                    class="rounded-circle bg-success p-1 position-absolute top-100 start-100 translate-middle border border-2 border-white"
+                  ></span>
+                </div>
+              </li>
+              <li class="me-1 ps-2 pe-4">
+                <strong class="me-auto">Alaiza Olores</strong>
+                <p class="mb-0"><small>Active now</small></p>
+              </li>
+              <li>
+                <ol class="list-unstyled d-flex align-items-center gap-2 ms-5">
+                  <li>
+                    <svg
+                      height="26px"
+                      role="presentation"
+                      viewBox="-5 -5 30 30"
+                      width="26px"
+                      fill="#0B5ED7"
+                    >
+                      <path
+                        d="M10.952 14.044c.074.044.147.086.22.125a.842.842 0 001.161-.367c.096-.195.167-.185.337-.42.204-.283.552-.689.91-.772.341-.078.686-.105.92-.11.435-.01 1.118.174 1.926.648a15.9 15.9 0 011.713 1.147c.224.175.37.43.393.711.042.494-.034 1.318-.754 2.137-1.135 1.291-2.859 1.772-4.942 1.088a17.47 17.47 0 01-6.855-4.212 17.485 17.485 0 01-4.213-6.855c-.683-2.083-.202-3.808 1.09-4.942.818-.72 1.642-.796 2.136-.754.282.023.536.17.711.392.25.32.663.89 1.146 1.714.475.808.681 1.491.65 1.926-.024.31-.026.647-.112.921-.11.35-.488.705-.77.91-.236.17-.226.24-.42.336a.841.841 0 00-.368 1.161c.04.072.081.146.125.22a14.012 14.012 0 004.996 4.996z"
+                        fill="var(--disabled-icon)"
+                      ></path>
+                      <path
+                        d="M10.952 14.044c.074.044.147.086.22.125a.842.842 0 001.161-.367c.096-.195.167-.185.337-.42.204-.283.552-.689.91-.772.341-.078.686-.105.92-.11.435-.01 1.118.174 1.926.648.824.484 1.394.898 1.713 1.147.224.175.37.43.393.711.042.494-.034 1.318-.754 2.137-1.135 1.291-2.859 1.772-4.942 1.088a17.47 17.47 0 01-6.855-4.212 17.485 17.485 0 01-4.213-6.855c-.683-2.083-.202-3.808 1.09-4.942.818-.72 1.642-.796 2.136-.754.282.023.536.17.711.392.25.32.663.89 1.146 1.714.475.808.681 1.491.65 1.926-.024.31-.026.647-.112.921-.11.35-.488.705-.77.91-.236.17-.226.24-.42.336a.841.841 0 00-.368 1.161c.04.072.081.146.125.22a14.012 14.012 0 004.996 4.996z"
+                        fill="none"
+                        stroke="var(--disabled-icon)"
+                      ></path>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      height="26px"
+                      role="presentation"
+                      viewBox="-3 -5 30 30"
+                      width="26px"
+                      fill="#0B5ED7"
+                    >
+                      <path
+                        d="M19.492 4.112a.972.972 0 00-1.01.063l-3.052 2.12a.998.998 0 00-.43.822v5.766a1 1 0 00.43.823l3.051 2.12a.978.978 0 001.011.063.936.936 0 00.508-.829V4.94a.936.936 0 00-.508-.828zM10.996 18A3.008 3.008 0 0014 14.996V5.004A3.008 3.008 0 0010.996 2H3.004A3.008 3.008 0 000 5.004v9.992A3.008 3.008 0 003.004 18h7.992z"
+                        fill="var(--disabled-icon)"
+                      ></path>
+                      <circle class="x1xgahvj" cx="24" cy="10" r="2"></circle>
+                    </svg>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </li>
+            </ul>
+          </div>
+          <div class="toast-body" style="background-color: #ffffff">
+            <!-- person chat -->
+            <ul
+              class="list-unstyled d-flex align-items-center gap-1 justify-content-start"
+            >
+              <li>
+                <img
+                  src="assets/imgs/profile picture/p1.png"
+                  alt="crush"
+                  class="rounded-circle"
+                  width="28"
+                />
+              </li>
+              <li>
+                <p
+                  class="p-2 rounded-bottom-4 rounded-end-4 mb-0 mt-2"
+                  style="background-color: #f0f2f5"
+                >
+                  Hi crush
+                </p>
+              </li>
+            </ul>
+            <!-- my reply -->
+            <ul class="list-unstyled d-flex justify-content-end">
+              <li>
+                <p
+                  class="p-3 rounded-start-4 rounded-top-4 text-light"
+                  style="background-color: #0084ff"
+                >
+                  Yay mas crush taka
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -3208,5 +3345,7 @@
         });
       });
     </script>
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
   </body>
 </html>
