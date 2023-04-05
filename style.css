@@ -190,8 +190,8 @@ a[title]:hover {
 
 /* GENERIC - POST DESCRIPTION TEXT */
 
-.fs-2 {
-  font-size: 1rem !important;
+.fs-5 {
+  font-size: 14px !important;
 }
 
 /* ASIDE [LEFT SIDEBAR] ==============GENERIC BUTTONS=============== */
@@ -289,9 +289,4 @@ aside .py-1:nth-child(7) {
 .display-3 {
   font-size: 14px !important;
   font-weight: 600;
-}
-/* NESTED POST DESCRIPTION - font size generic */
-
-.fs-5 {
-  font-size: 14px !important;
 }
