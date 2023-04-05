@@ -2431,8 +2431,13 @@
               </p>
             </li>
             <!-- Video -->
-            <li class="container">
-              <video class="w-100 rounded-3" controls>
+            <li class="container container-sm">
+              <!-- SHOW ON XS (HIDE ON SM - UP) -->
+              <video class="rounded-3 w-25 d-block d-sm-none" controls>
+                <source src="assets/videos/video1.mp4" type="video/mp4" />
+              </video>
+              <!-- SHOW ON SM and UP (HIDE ON XS) -->
+              <video class="rounded-3 w-100 d-none d-sm-block" controls>
                 <source src="assets/videos/video1.mp4" type="video/mp4" />
               </video>
             </li>
